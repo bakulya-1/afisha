@@ -19,6 +19,7 @@ from django.urls import path, include
 from movie_app import views
 
 
+
 app_name = "movie_app"
 urlpatterns = [
     path('admin/', admin.site.urls),

@@ -3,6 +3,8 @@ from rest_framework import generics
 from .models import Director, Movie, Review
 from .serializers import DirectorSerializer, MovieSerializer, ReviewSerializer
 
+
+
 class DirectorListView(generics.ListAPIView):
     queryset = Director.objects.all()
     serializer_class = DirectorSerializer
